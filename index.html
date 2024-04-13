@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products</title>
+    <style>
+        body { background-color: #f0f0f5; font-family: Arial, sans-serif; margin: 0; color: #333; }
+        .header { background-color: #333; padding: 20px; text-align: center; }
+        .header a { color: white; padding: 14px 20px; text-decoration: none; margin: 0 10px; }
+        .hero { display: flex; padding: 20px; align-items: center; }
+        .hero img { width: 40%; height: auto; margin-right: 20px; }
+        .footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+        .container { padding: 20px; }
+        input[type=text], select, textarea {
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #04AA6D; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;
+        }
+        input[type=submit]:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#about">About</a>
+    </div>
+    <div class="hero">
+        <img src="https://www.example.com/apple-product-image.jpg" alt="Apple Product">
+        <div>
+            <h1>Amazing Apple Products</h1>
+            <p>Explore the world of Apple and discover innovative products that can change your life.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="/submit_form" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        &copy; 2023 Apple Inc. All rights reserved.
+    </div>
+
+    <script>
+        // Script can be added here for enhanced functionalities like form validation
+    </script>
+</body>
+</html>
